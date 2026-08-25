@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc" text-rendering="geometricPrecision">
   <title id="title">oscout</title>
-  <desc id="desc">Open infrastructure for agents that work together</desc>
+  <desc id="desc">Open infrastructure for your personal cloud agent</desc>
   <rect width="1280" height="640" fill="#10110f"/>
   <g stroke="#394238" opacity=".65"><path d="M0 128h1280M0 256h1280M0 384h1280M0 512h1280"/><path d="M160 0v640M320 0v640M480 0v640M640 0v640M800 0v640M960 0v640M1120 0v640"/></g>
   <g transform="translate(82 88)" fill="none" stroke-linejoin="round">
@@ -8,7 +8,7 @@
     <path d="M88 43l38 22v45l-38 22-38-22V65z" stroke="#94d59a" stroke-width="14"/>
   </g>
   <text x="82" y="378" fill="#f7f4ea" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="128" font-weight="760" letter-spacing="-6">oscout</text>
-  <text x="88" y="447" fill="#c8cec4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="600" letter-spacing="2">OPEN INFRASTRUCTURE FOR AGENTS THAT WORK TOGETHER</text>
+  <text x="88" y="447" fill="#e0e5dc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="700" letter-spacing="1.2">CONTROL PLANE + MESH = YOUR PERSONAL CLOUD AGENT</text>
   <path d="M88 513h368" stroke="#94d59a" stroke-width="5"/>
   <text x="88" y="559" fill="#8f998b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="21">LOCAL OWNERSHIP · EXPLICIT ROUTING · DURABLE HANDOFFS</text>
 </svg>
