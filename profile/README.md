@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="./assets/org-hero.svg" alt="oscout — open infrastructure for local agent coordination" width="100%" />
+  <img src="./assets/org-hero.svg" alt="oscout — open infrastructure for your personal cloud agent" width="100%" />
 </p>
 
 <p align="center">
-  <strong>Open infrastructure for agents that work together.</strong><br />
-  Local ownership, explicit routing, durable handoffs, and one shared coordination model.
+  <strong>Open infrastructure for your personal cloud agent.</strong><br />
+  A local control plane and mesh network across the machines you own.
 </p>
 
 <p align="center">
@@ -18,6 +18,8 @@
 We build the public core of **OpenScout**: a local-first control plane for
 discovering coding-agent sessions, routing work, and keeping coordination
 durable across tools and machines.
+
+> **Local control plane + mesh network = your personal cloud agent.**
 
 ## Start with Scout
 

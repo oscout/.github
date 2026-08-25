@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">oscout</title>
-  <desc id="desc">Open infrastructure for local agent coordination</desc>
+  <desc id="desc">Open infrastructure for your personal cloud agent</desc>
   <rect width="1200" height="420" rx="28" fill="#10110f"/>
   <g stroke="#394238" stroke-width="1" opacity=".62">
     <path d="M0 105h1200M0 210h1200M0 315h1200"/>
@@ -17,7 +17,7 @@
     <path d="M48 25l20 12v23L48 72 28 60V37z"/>
   </g>
   <text x="80" y="226" fill="#f7f4ea" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="86" font-weight="750" letter-spacing="-4">oscout</text>
-  <text x="84" y="277" fill="#c8cec4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" font-weight="600" letter-spacing="2.2">OPEN INFRASTRUCTURE FOR AGENT COORDINATION</text>
+  <text x="84" y="277" fill="#c8cec4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="600" letter-spacing="2">CONTROL PLANE + MESH = YOUR PERSONAL CLOUD AGENT</text>
   <g transform="translate(84 326)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">
     <rect width="112" height="34" rx="17" fill="#1b201a" stroke="#526052"/><text x="21" y="22" fill="#94d59a">LOCAL FIRST</text>
     <rect x="126" width="152" height="34" rx="17" fill="#1b201a" stroke="#526052"/><text x="145" y="22" fill="#f7f4ea">EXPLICIT ROUTING</text>
