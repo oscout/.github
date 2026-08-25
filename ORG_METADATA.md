@@ -5,7 +5,7 @@ Use these values when configuring the public GitHub organization.
 | Field | Value |
 | --- | --- |
 | Display name | oscout |
-| Description | Open infrastructure for your personal cloud agent. Home of Scout. |
+| Description | Open infrastructure for your personal agent cloud. Home of Scout. |
 | URL | `https://oscout.net` |
 | Avatar | `assets/oscout-avatar.png` |
 | Profile README | `profile/README.md` |
