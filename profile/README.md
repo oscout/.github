@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/org-hero.svg" alt="oscout — open infrastructure for your personal cloud agent" width="100%" />
+  <img src="./assets/org-hero.svg" alt="Scout — open infrastructure for your personal cloud agent" width="100%" />
 </p>
 
 <p align="center">
