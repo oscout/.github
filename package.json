@@ -1,0 +1,11 @@
+{
+  "name": "@oscout/github-profile",
+  "private": true,
+  "scripts": {
+    "assets:render": "node scripts/render-brand-assets.mjs",
+    "check": "node scripts/check-profile.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

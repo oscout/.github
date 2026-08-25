@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">oscout</title>
+  <desc id="desc">Open infrastructure for local agent coordination</desc>
+  <rect width="1200" height="420" rx="28" fill="#10110f"/>
+  <g stroke="#394238" stroke-width="1" opacity=".62">
+    <path d="M0 105h1200M0 210h1200M0 315h1200"/>
+    <path d="M150 0v420M300 0v420M450 0v420M600 0v420M750 0v420M900 0v420M1050 0v420"/>
+  </g>
+  <g fill="none" stroke="#526052" stroke-width="2" opacity=".8">
+    <path d="M44 336L184 255L324 300L464 169L604 222L744 102L884 173L1024 89L1156 144"/>
+  </g>
+  <g fill="#94d59a">
+    <circle cx="184" cy="255" r="5"/><circle cx="464" cy="169" r="5"/><circle cx="744" cy="102" r="5"/><circle cx="1024" cy="89" r="5"/>
+  </g>
+  <g transform="translate(80 64)" fill="none" stroke="#f7f4ea" stroke-width="10" stroke-linejoin="round">
+    <path d="M48 0l41 24v48L48 96 7 72V24z"/>
+    <path d="M48 25l20 12v23L48 72 28 60V37z"/>
+  </g>
+  <text x="80" y="226" fill="#f7f4ea" font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="86" font-weight="750" letter-spacing="-4">oscout</text>
+  <text x="84" y="277" fill="#c8cec4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" font-weight="600" letter-spacing="2.2">OPEN INFRASTRUCTURE FOR AGENT COORDINATION</text>
+  <g transform="translate(84 326)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700">
+    <rect width="112" height="34" rx="17" fill="#1b201a" stroke="#526052"/><text x="21" y="22" fill="#94d59a">LOCAL FIRST</text>
+    <rect x="126" width="152" height="34" rx="17" fill="#1b201a" stroke="#526052"/><text x="145" y="22" fill="#f7f4ea">EXPLICIT ROUTING</text>
+    <rect x="292" width="164" height="34" rx="17" fill="#1b201a" stroke="#526052"/><text x="311" y="22" fill="#f7f4ea">DURABLE HANDOFFS</text>
+  </g>
+</svg>
