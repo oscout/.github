@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc" text-rendering="geometricPrecision">
   <title id="title">Scout</title>
-  <desc id="desc">Scout — open infrastructure for your personal cloud agent</desc>
+  <desc id="desc">Scout — open infrastructure for your personal agent cloud</desc>
   <defs>
     <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#10110f"/>
@@ -12,9 +12,9 @@
     <path d="M88 0l76 44v88l-76 44-76-44V44z" stroke="#f7f4ea" stroke-width="17"/>
     <path d="M88 43l38 22v45l-38 22-38-22V65z" stroke="#94d59a" stroke-width="14"/>
   </g>
-  <text x="82" y="384" fill="#f7f4ea" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="138" font-weight="700" letter-spacing="-3">Scout</text>
-  <text x="88" y="452" fill="#e0e5dc" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="1.15">CONTROL PLANE + MESH = YOUR PERSONAL CLOUD AGENT</text>
-  <g transform="translate(88 514)" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".75" text-anchor="middle">
+  <text x="300" y="242" fill="#f7f4ea" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="138" font-weight="700" letter-spacing="-3">Scout</text>
+  <text x="88" y="382" fill="#e0e5dc" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="1.15">CONTROL PLANE + MESH = YOUR PERSONAL AGENT CLOUD</text>
+  <g transform="translate(88 454)" font-family="Avenir Next Condensed, Arial Narrow, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".75" text-anchor="middle">
     <g>
       <rect width="164" height="42" rx="6" fill="#1b201a" stroke="#526052" stroke-width="1.5"/>
       <text x="82" y="27" fill="#94d59a">LOCAL FIRST</text>
