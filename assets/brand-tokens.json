@@ -3,10 +3,14 @@
   "color": {
     "field": { "$value": "#10110f", "$type": "color" },
     "surface": { "$value": "#1b201a", "$type": "color" },
-    "ink": { "$value": "#f7f4ea", "$type": "color" },
+    "ink": { "$value": "#fff7ea", "$type": "color" },
     "muted": { "$value": "#c8cec4", "$type": "color" },
     "quiet": { "$value": "#8f998b", "$type": "color" },
     "hairline": { "$value": "#394238", "$type": "color" },
-    "signal": { "$value": "#94d59a", "$type": "color" }
+    "signal": {
+      "$value": "#94d59a",
+      "$type": "color",
+      "$description": "Single emerald signal. Spend once per view, only for the live or primary state; never use it as categorical color."
+    }
   }
 }

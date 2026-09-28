@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/org-hero.svg" alt="Scout — open infrastructure for your personal agent cloud" width="100%" />
+  <img src="./assets/org-hero.svg" alt="Scout — one place to see, steer, and remember your agents" width="100%" />
 </p>
 
 <p align="center">
@@ -8,9 +8,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/oscout/scout"><img alt="Scout" src="https://img.shields.io/badge/explore-Scout-94d59a?style=flat-square&labelColor=171a16" /></a>
-  <a href="https://www.npmjs.com/package/@openscout/scout"><img alt="npm version" src="https://img.shields.io/npm/v/@openscout/scout?style=flat-square&label=npm&color=f7f4ea&labelColor=171a16" /></a>
-  <a href="https://oscout.net"><img alt="oscout.net" src="https://img.shields.io/badge/home-oscout.net-dde6d8?style=flat-square&labelColor=171a16" /></a>
+  <a href="https://github.com/oscout/scout"><img alt="Scout" src="https://img.shields.io/badge/explore-Scout-fff7ea?style=flat-square&labelColor=10110f" /></a>
+  <a href="https://www.npmjs.com/package/@openscout/scout"><img alt="npm version" src="https://img.shields.io/npm/v/@openscout/scout?style=flat-square&label=npm&color=fff7ea&labelColor=10110f" /></a>
+  <a href="https://oscout.net"><img alt="oscout.net" src="https://img.shields.io/badge/home-oscout.net-fff7ea?style=flat-square&labelColor=10110f" /></a>
 </p>
 
 ---
