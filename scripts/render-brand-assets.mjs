@@ -1,17 +1,12 @@
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { copyFile } from "node:fs/promises";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const jobs = [
-  ["assets/oscout-avatar.svg", "assets/oscout-avatar.png"],
-  ["assets/org-social-preview.svg", "assets/org-social-preview.png"],
-  ["profile/assets/org-hero.svg", "profile/assets/org-hero.png"],
-];
-
-for (const [source, output] of jobs) {
-  await sharp(join(root, source), { density: 144 })
-    .png({ compressionLevel: 9 })
-    .toFile(join(root, output));
-  console.log(`rendered ${output}`);
-}
+// The approved homepage artwork is the master; retain its original pixels.
+await copyFile(join(root, "profile/assets/org-hero.png"), join(root, "assets/org-social-preview.png"));
+await sharp(join(root, "assets/oscout-avatar.svg"))
+  .png({ compressionLevel: 9 })
+  .toFile(join(root, "assets/oscout-avatar.png"));
+console.log("Prepared Scout avatar and approved social artwork");

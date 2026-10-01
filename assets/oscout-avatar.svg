@@ -1,7 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
-  <title id="title">Scout mark</title>
-  <desc id="desc">A nested hexagonal scout mark on a dark field</desc>
-  <rect width="1024" height="1024" rx="48" fill="#10110f"/>
-  <path d="M512 150l313 181v362L512 874 199 693V331z" fill="none" stroke="#f7f4ea" stroke-width="70" stroke-linejoin="round"/>
-  <path d="M512 342l146 84v169l-146 84-146-84V426z" fill="none" stroke="#94d59a" stroke-width="58" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!--
+    Canonical Scout app mark. The geometry is shared with V3ScoutMark:
+    a strong outer ring and a filled inner hex.
+  -->
+  <defs>
+    <radialGradient id="field" cx="50%" cy="48%" r="72%">
+      <stop offset="0" stop-color="#20251f"/>
+      <stop offset="0.62" stop-color="#121310"/>
+      <stop offset="1" stop-color="#090a08"/>
+    </radialGradient>
+    <filter id="markGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff7ea" flood-opacity="0.16" result="glow"/>
+      <feComposite in="glow" in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#10110f"/>
+  <rect width="1024" height="1024" fill="url(#field)"/>
+
+  <g transform="translate(167 148) scale(3.08)" fill="#fff7ea" filter="url(#markGlow)">
+    <path
+      d="M103.01 13.21 Q112 8 120.99 13.21 L198.01 57.79 Q207 63 207 73.39 L207 162.61 Q207 173 198.01 178.21 L120.99 222.79 Q112 228 103.01 222.79 L25.99 178.21 Q17 173 17 162.61 L17 73.39 Q17 63 25.99 57.79 Z"
+      fill="none"
+      stroke="#fff7ea"
+      stroke-width="24"
+      stroke-linejoin="round"
+    />
+    <path d="M112 70 154 94v48l-42 24-42-24V94Z"/>
+  </g>
 </svg>

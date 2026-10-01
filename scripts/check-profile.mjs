@@ -6,11 +6,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const required = [
   "README.md",
   "profile/README.md",
-  "profile/assets/org-hero.svg",
   "profile/assets/org-hero.png",
   "assets/oscout-avatar.svg",
   "assets/oscout-avatar.png",
-  "assets/org-social-preview.svg",
   "assets/org-social-preview.png",
   "assets/brand-tokens.json",
 ];

@@ -4,9 +4,9 @@ This repository owns the public GitHub profile and shared base assets for the
 [`oscout`](https://github.com/oscout) organization.
 
 - `profile/README.md` renders on the organization home page.
-- `profile/assets/org-hero.svg` is the profile README hero.
-- `assets/oscout-avatar.svg` is the source for the organization avatar.
-- `assets/org-social-preview.svg` is the source for repository and social cards.
+- `profile/assets/org-hero.png` is the approved homepage OG artwork, reused as the profile README hero (1730×909).
+- `assets/oscout-avatar.svg` is the canonical app icon source for the organization avatar; `assets/oscout-avatar.png` is ready to upload.
+- `assets/org-social-preview.png` is an unchanged copy of the approved homepage artwork for repository and social cards.
 - `assets/brand-tokens.json` records the small shared palette.
 - `ORG_METADATA.md` records the recommended GitHub organization fields.
 
