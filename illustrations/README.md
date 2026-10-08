@@ -37,3 +37,4 @@ Copy the host's light and dark SVGs into the integration repository's `assets/` 
 | pi | Sparse prompt and extension slots. |
 | Hermes | Conversation, tool bridge, and tool slots. |
 | Grok Bot | Local bridge, hosted boundary, and conversation card. |
+| Android | Encrypted relay, then a handset with a heads-up permission request. |
