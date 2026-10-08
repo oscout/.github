@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img" aria-labelledby="pi-light-t pi-light-d">
+<title id="pi-light-t">Scout and pi</title>
+<desc id="pi-light-d">A Scout message lands in pi's minimal terminal editor, beside a column of extension slots with one installed.</desc>
+<rect width="1600" height="500" fill="#fbfaf7"/>
+<g transform="translate(111.44 209.38) scale(0.34426)">
+  <path d="M103.01 13.21 Q112 8 120.99 13.21 L198.01 57.79 Q207 63 207 73.39 L207 162.61 Q207 173 198.01 178.21 L120.99 222.79 Q112 228 103.01 222.79 L25.99 178.21 Q17 173 17 162.61 L17 73.39 Q17 63 25.99 57.79 Z" fill="none" stroke="#17181a" stroke-width="24" stroke-linejoin="round"/>
+  <path d="M112 70 154 94v48l-42 24-42-24V94Z" fill="#17181a"/></g>
+<svg x="372.00" y="138.00" width="48.00" height="48.00" viewBox="0 0 800 800" overflow="visible">
+  <rect width="800" height="800" rx="120" fill="#09090b"/>
+  <path fill="#fff" fill-rule="evenodd" d="M165.29 165.29H517.36V400H400V517.36H282.65V634.72H165.29ZM282.65 282.65V400H400V282.65Z"/>
+  <path fill="#fff" d="M517.36 400H634.72V634.72H517.36Z"/>
+</svg>
+<line x1="444" y1="150" x2="892" y2="150" stroke="#17181a" stroke-opacity="0.46" stroke-width="3" stroke-linecap="round"/>
+<line x1="444" y1="174" x2="752" y2="174" stroke="#17181a" stroke-opacity="0.46" stroke-width="3" stroke-linecap="round"/>
+<path d="M372 218 H1320 M372 282 H1320" fill="none" stroke="#17181a" stroke-opacity="0.46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<line x1="398" y1="250" x2="702" y2="250" stroke="#3a9a57" stroke-opacity="1" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="714" y="238" width="11" height="24" rx="1" fill="#17181a" fill-opacity="1"/>
+<line x1="372" y1="316" x2="502" y2="316" stroke="#17181a" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+<line x1="1170" y1="316" x2="1320" y2="316" stroke="#17181a" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round"/>
+<rect x="1396" y="169" width="34" height="34" rx="6" fill="none" stroke="#17181a" stroke-opacity="0.46" stroke-width="2"/>
+<rect x="1396" y="233" width="34" height="34" rx="6" fill="#17181a" fill-opacity="1"/>
+<rect x="1396" y="297" width="34" height="34" rx="6" fill="none" stroke="#17181a" stroke-opacity="0.46" stroke-width="2"/><path d="M186.8 250 H372" fill="none" stroke="#3a9a57" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round"/>
+</svg>

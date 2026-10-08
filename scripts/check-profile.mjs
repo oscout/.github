@@ -11,6 +11,11 @@ const required = [
   "assets/oscout-avatar.png",
   "assets/org-social-preview.png",
   "assets/brand-tokens.json",
+  "assets/brand/scout-lockup-ink.svg",
+  "assets/brand/scout-lockup-light.svg",
+  "assets/brand/scout-glyph-ink.svg",
+  "assets/brand/scout-glyph-light.svg",
+  "assets/pages/scout-pages.css",
 ];
 
 const missing = required.filter((path) => !existsSync(resolve(root, path)));
