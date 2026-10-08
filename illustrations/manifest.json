@@ -23,8 +23,7 @@
       "crop": [
         290,
         21
-      ],
-      "markOverlay": true
+      ]
     }
   },
   {
@@ -44,8 +43,7 @@
       "crop": [
         340,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   },
   {
@@ -65,8 +63,7 @@
       "crop": [
         1080,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   },
   {
@@ -86,8 +83,7 @@
       "crop": [
         740,
         21
-      ],
-      "markOverlay": true
+      ]
     }
   },
   {
@@ -108,8 +104,7 @@
       "crop": [
         340,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   },
   {
@@ -129,8 +124,7 @@
       "crop": [
         384,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   },
   {
@@ -150,8 +144,7 @@
       "crop": [
         1000,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   },
   {
@@ -171,8 +164,7 @@
       "crop": [
         1010,
         21
-      ],
-      "markOverlay": false
+      ]
     }
   }
 ]
