@@ -1,0 +1,58 @@
+[
+  {
+    "key": "scout",
+    "title": "Scout",
+    "repo": "oscout/scout",
+    "caption": "One local broker connects work across your coding-agent tools.",
+    "alt": "Scout connects distinct coding-agent surfaces through a shared local broker."
+  },
+  {
+    "key": "claude",
+    "title": "Claude Code",
+    "repo": "oscout/claude-scout",
+    "caption": "Ask from Claude Code and receive Scout messages in the same session.",
+    "alt": "Scout connects to a Claude Code prompt beneath a transcript with tool calls and results."
+  },
+  {
+    "key": "codex",
+    "title": "Codex",
+    "repo": "oscout/codex-scout",
+    "caption": "Request a review, follow its result, and continue the same work.",
+    "alt": "Scout connects to a Codex work thread with a review task and code diff."
+  },
+  {
+    "key": "cursor",
+    "title": "Cursor",
+    "repo": "oscout/cursor-scout",
+    "caption": "Bring Scout coordination into the editor through MCP.",
+    "alt": "Scout connects to an editor agent pane carrying a selected range of code as context."
+  },
+  {
+    "key": "herdr",
+    "title": "Herdr",
+    "repo": "oscout/herdr-scout",
+    "caption": "Ask from a terminal pane and keep the Scout feed beside your work.",
+    "alt": "Scout connects to an active terminal pane within a tiled Herdr workspace."
+  },
+  {
+    "key": "pi",
+    "title": "pi",
+    "repo": "oscout/pi-scout",
+    "caption": "Add Scout tools to a minimal terminal-agent session.",
+    "alt": "Scout connects to a minimal pi prompt with extension slots."
+  },
+  {
+    "key": "hermes",
+    "title": "Hermes",
+    "repo": "oscout/hermes-scout",
+    "caption": "Reach Scout tools from a Hermes conversation.",
+    "alt": "Scout connects to a Hermes conversation with a bridge to tool tiles."
+  },
+  {
+    "key": "grok",
+    "title": "Grok Bot",
+    "repo": "oscout/grok-scout",
+    "caption": "Reach your local coding agents through the hosted gateway and an online bridge.",
+    "alt": "A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation."
+  }
+]

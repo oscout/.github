@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/oscout/.github/main/profile/assets/org-hero.png" alt="Scout — Connecting all your agents" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/oscout/.github/main/assets/illustrations/scout-scout-dark.svg" />
+    <img src="https://raw.githubusercontent.com/oscout/.github/main/assets/illustrations/scout-scout-light.svg" alt="Scout connects Claude Code, Codex, Cursor, and hosted conversations through a local broker." width="100%" />
+  </picture>
 </p>
 
 <p align="center">
@@ -34,6 +37,18 @@ scout doctor
 scout ask --project . --harness codex "Review this repository."
 ```
 
+## Choose your integration
+
+| Your tool | Scout integration |
+| --- | --- |
+| Claude Code | [Commands and channel](https://github.com/oscout/claude-scout) |
+| Codex | [MCP tools and coordination skill](https://github.com/oscout/codex-scout) |
+| Cursor | [Editor MCP configuration](https://github.com/oscout/cursor-scout) |
+| Herdr | [Terminal pane actions and feed](https://github.com/oscout/herdr-scout) |
+| pi | [Native Scout tools](https://github.com/oscout/pi-scout) |
+| Hermes | [Conversation and tool bridge](https://github.com/oscout/hermes-scout) |
+| Grok Bot | [Hosted connector](https://github.com/oscout/grok-scout) |
+
 ## What guides the work
 
 | Principle | In practice |
@@ -50,8 +65,8 @@ avoid claiming enterprise or compliance readiness before it exists.
 
 ## Find your way in
 
-- [Install Scout](https://github.com/oscout/scout#start-in-60-seconds)
-- [Read the architecture](https://github.com/oscout/scout#one-broker-many-surfaces)
+- [Install Scout](https://github.com/oscout/scout#get-started)
+- [Read the architecture](https://github.com/oscout/scout#the-small-model)
 - [Contribute](https://github.com/oscout/scout/blob/main/CONTRIBUTING.md)
 - [Get support](https://github.com/oscout/scout/blob/main/SUPPORT.md)
 - [Report a security issue](https://github.com/oscout/scout/security/policy)
