@@ -54,5 +54,12 @@
     "repo": "oscout/grok-scout",
     "caption": "Reach your local coding agents through the hosted gateway and an online bridge.",
     "alt": "A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation."
+  },
+  {
+    "key": "android",
+    "title": "Android",
+    "repo": "oscout/scout-android",
+    "caption": "Your agents in your pocket: approve a permission request without leaving the notification.",
+    "alt": "Scout reaches a paired Android phone through an encrypted relay, where a permission request arrives as a heads-up notification with Deny and Allow."
   }
 ]

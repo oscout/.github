@@ -1,4 +1,4 @@
-// Scout doc illustrations — "Station + Surface" family (core Scout + seven hosts).
+// Scout doc illustrations — "Station + Surface" family (core Scout + eight hosts).
 // Deterministic SVG; PNG proofs via sharp (librsvg). No text labels; platform marks are embedded from their source assets.
 // Run from the repository root: bun run illustrations:render
 import { writeFileSync, mkdirSync, readFileSync } from "node:fs";
@@ -31,6 +31,7 @@ const MARK_SRC = {
   pi: loadSvgMark("pi"),
   herdr: loadSvgMark("herdr"),
   grok: loadSvgMark("grok"),
+  android: loadSvgMark("android"),
 };
 const HERMES_PNG = `data:image/png;base64,${readFileSync(join(MARKS, "hermes.png")).toString("base64")}`;
 
@@ -46,6 +47,7 @@ function brand(t, ns, key, x, y, size) {
   const { vb, inner } = MARK_SRC[key];
   let body = inner;
   if (key === "herdr") body = body.replace(/fill="white"/g, `fill="${t.ink}"`);
+  if (key === "android") body = body.replace(/<title>[^<]*<\/title>/, "").replace(/<path /, `<path fill="${t.ink}" `);
   if (key === "grok") body = body.replace(/id="eyes"/g, `id="${ns}-grok-eyes"`).replace(/url\(#eyes\)/g, `url(#${ns}-grok-eyes)`).replace(/fill="#000" mask/g, `fill="${t.ink}" mask`);
   const [, , vw, vh] = vb;
   const k = size / Math.max(vw, vh);
@@ -414,7 +416,62 @@ function scout(t) {
     route(t, `M${R} ${CY} H920 Q940 ${CY} 940 ${CY - 20} V150 Q940 130 960 130 H1060`);
 }
 
-const HOSTS = { scout, claude, codex, cursor, herdr, pi, hermes, grok };
+
+// ── Android: the phone paired to your computer, over the relay. The route passes the
+// encrypted relay (a block with a padlock) and reaches a portrait handset (punch-hole camera,
+// gesture bar) showing Scout's own screen, where an agent's permission request drops in as a
+// heads-up notification with Deny and Allow: the entry.
+function android(t) {
+  const c = ctx(t);
+  // relay block, padlocked: the Noise-encrypted link between computer and phone
+  const R0 = 600, R1 = 840;
+  c.rect(R0, CY - 40, R1 - R0, 80, 14, T.strong);
+  const LX = R0 + 40;
+  c.path(`M${LX - 9} ${CY - 4} V${CY - 13} Q${LX - 9} ${CY - 23} ${LX} ${CY - 23} Q${LX + 9} ${CY - 23} ${LX + 9} ${CY - 13} V${CY - 4}`, T.strong, S.glyph);
+  c.rect(LX - 14, CY - 4, 28, 22, 4, T.strong, S.glyph);
+  c.bar(R0 + 76, R0 + 196, CY - 10, T.body);
+  c.bar(R0 + 76, R0 + 150, CY + 12, T.quiet);
+  // handset
+  const PX0 = 1080, PX1 = 1304, PT = 56, PB = 444;
+  c.rect(PX0, PT, PX1 - PX0, PB - PT, 36, T.strong);
+  const MID = (PX0 + PX1) / 2;
+  c.dot(MID, PT + 22, 5, T.strong); // punch-hole camera
+  // masthead: burger, title, host pill
+  const MY = PT + 62;
+  [MY - 8, MY, MY + 8].forEach((y) => c.bar(PX0 + 24, PX0 + 42, y, T.body, 2.5));
+  c.bar(PX0 + 58, PX0 + 108, MY, T.strong);
+  c.rect(PX1 - 78, MY - 13, 56, 26, 13, T.body);
+  c.dot(PX1 - 63, MY, 4, 1, t.route);
+  c.bar(PX1 - 54, PX1 - 34, MY, T.quiet, 2.5);
+  c.path(`M${PX0} ${MY + 26} H${PX1}`, T.quiet, S.frame);
+  // usage: two rows of ten dots
+  [MY + 48, MY + 66].forEach((y, r) => {
+    c.bar(PX0 + 24, PX0 + 58, y, T.body, 2.5);
+    for (let i = 0; i < 10; i++) c.dot(PX0 + 76 + i * 12, y, 3, i < (r ? 1 : 3) ? T.strong : T.quiet);
+  });
+  // heads-up permission request: the entry
+  const NX0 = PX0 + 14, NX1 = PX1 - 14, NT = 206, NB = 306;
+  c.out.push(`<rect x="${NX0}" y="${NT}" width="${NX1 - NX0}" height="${NB - NT}" rx="16" fill="${t.ground}" stroke="${t.ink}" stroke-width="${S.frame}"/>`);
+  // the notification's small icon: the Scout glyph, as Android shows an app's own mark
+  const gs = 18 / 244, gx = NX0 + 30 - 112 * gs, gy = NT + 26 - 118 * gs;
+  c.out.push(`<g transform="translate(${gx.toFixed(2)} ${gy.toFixed(2)}) scale(${gs.toFixed(5)})"><path d="M103.01 13.21 Q112 8 120.99 13.21 L198.01 57.79 Q207 63 207 73.39 L207 162.61 Q207 173 198.01 178.21 L120.99 222.79 Q112 228 103.01 222.79 L25.99 178.21 Q17 173 17 162.61 L17 73.39 Q17 63 25.99 57.79 Z" fill="none" stroke="${t.ink}" stroke-width="28" stroke-linejoin="round"/><path d="M112 70 154 94v48l-42 24-42-24V94Z" fill="${t.ink}"/></g>`);
+  c.bar(NX0 + 48, NX0 + 140, NT + 26, T.strong);
+  c.bar(NX0 + 20, NX1 - 30, NT + 50, T.body);
+  c.bar(NX0 + 24, NX0 + 64, NB - 24, T.body);
+  c.bar(NX0 + 96, NX0 + 150, NB - 24, 1, S.text + 0.5, t.route);
+  // moving rows beneath
+  [336, 362, 388].forEach((y, i) => {
+    c.dot(PX0 + 30, y, 4, i === 0 ? T.strong : T.quiet);
+    c.bar(PX0 + 46, PX0 + [168, 142, 120][i], y, i === 0 ? T.body : T.quiet);
+  });
+  c.bar(MID - 34, MID + 34, PB - 18, T.body, 4); // gesture bar
+  c.out.push(brand(t, t.ns, "android", PX1 + 36, PT + 4, 56));
+  return c.out.join("\n") +
+    straight(t, R0) +
+    route(t, `M${R1} ${CY} H${PX0}`);
+}
+
+const HOSTS = { scout, claude, codex, cursor, herdr, pi, hermes, grok, android };
 
 const A11Y = {
   scout: ["Scout coordinates agents", "The Scout mark at center routes two live deliveries, into a Claude Code prompt and a Codex task, while Cursor and a hosted Grok Bot gateway stay connected and quiet."],
@@ -424,6 +481,7 @@ const A11Y = {
   herdr: ["Scout and Herdr", "Scout runs along a seam of Herdr's split terminal panes and lands at the prompt of one pane."],
   pi: ["Scout and pi", "A Scout message lands in pi's minimal terminal editor, beside a column of extension slots with one installed."],
   hermes: ["Scout and Hermes", "Scout delivers a message into a Hermes chat, which bridges to a rail of tools. Hermes connects chat to tools; it is not drawn executing anything."],
+  android: ["Scout and Scout for Android", "Scout reaches a paired Android phone through the encrypted relay; an agent's permission request drops over Scout's screen as a heads-up notification with Deny and Allow."],
   grok: ["Scout and the hosted Grok Bot", "Scout reaches the hosted Grok Bot gateway through an online local bridge; the route stops at the hosted boundary, where the gateway takes over."],
 };
 
