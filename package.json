@@ -4,7 +4,8 @@
   "scripts": {
     "assets:render": "node scripts/render-brand-assets.mjs",
     "check": "node scripts/check-profile.mjs",
-    "illustrations:render": "node illustrations/render.mjs"
+    "illustrations:render": "node illustrations/render.mjs",
+    "social:render": "node illustrations/social.mjs"
   },
   "devDependencies": {
     "sharp": "^0.34.5"

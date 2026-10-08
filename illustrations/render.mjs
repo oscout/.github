@@ -498,13 +498,18 @@ ${HOSTS[host](t)}
 </svg>`;
 }
 
-for (const host of Object.keys(HOSTS)) {
-  for (const theme of Object.keys(THEMES)) {
-    const s = svg(host, theme);
-    const base = join(OUT, `${host}-scout-${theme}`);
-    writeFileSync(`${base}.svg`, s);
-    await sharp(Buffer.from(s), { density: 144 }).png().toFile(`${base}@2x.png`);
-    await sharp(Buffer.from(s)).png().toFile(`${base}.png`);
+// Shared with social.mjs, which reuses the host drawings for repository social cards.
+export { svg, brand, mark, HOSTS, THEMES, W, H };
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  for (const host of Object.keys(HOSTS)) {
+    for (const theme of Object.keys(THEMES)) {
+      const s = svg(host, theme);
+      const base = join(OUT, `${host}-scout-${theme}`);
+      writeFileSync(`${base}.svg`, s);
+      await sharp(Buffer.from(s), { density: 144 }).png().toFile(`${base}@2x.png`);
+      await sharp(Buffer.from(s)).png().toFile(`${base}.png`);
+    }
   }
+  console.log("ok");
 }
-console.log("ok");

@@ -11,55 +11,153 @@
     "title": "Claude Code",
     "repo": "oscout/claude-scout",
     "caption": "Ask from Claude Code and receive Scout messages in the same session.",
-    "alt": "Scout connects to a Claude Code prompt beneath a transcript with tool calls and results."
+    "alt": "Scout connects to a Claude Code prompt beneath a transcript with tool calls and results.",
+    "social": {
+      "name": "Claude Code",
+      "points": [
+        "SLASH COMMANDS",
+        "SCOUT CHANNEL",
+        "ONE SESSION"
+      ],
+      "crop": [
+        290,
+        21
+      ]
+    }
   },
   {
     "key": "codex",
     "title": "Codex",
     "repo": "oscout/codex-scout",
     "caption": "Request a review, follow its result, and continue the same work.",
-    "alt": "Scout connects to a Codex work thread with a review task and code diff."
+    "alt": "Scout connects to a Codex work thread with a review task and code diff.",
+    "social": {
+      "name": "Codex",
+      "points": [
+        "MCP TOOLS",
+        "REVIEW HANDOFFS",
+        "SAME THREAD"
+      ],
+      "crop": [
+        340,
+        21
+      ]
+    }
   },
   {
     "key": "cursor",
     "title": "Cursor",
     "repo": "oscout/cursor-scout",
     "caption": "Bring Scout coordination into the editor through MCP.",
-    "alt": "Scout connects to an editor agent pane carrying a selected range of code as context."
+    "alt": "Scout connects to an editor agent pane carrying a selected range of code as context.",
+    "social": {
+      "name": "Cursor",
+      "points": [
+        "MCP CONFIG",
+        "ONE INSTALLER",
+        "SELECTION AS CONTEXT"
+      ],
+      "crop": [
+        1080,
+        21
+      ]
+    }
   },
   {
     "key": "herdr",
     "title": "Herdr",
     "repo": "oscout/herdr-scout",
     "caption": "Ask from a terminal pane and keep the Scout feed beside your work.",
-    "alt": "Scout connects to an active terminal pane within a tiled Herdr workspace."
+    "alt": "Scout connects to an active terminal pane within a tiled Herdr workspace.",
+    "social": {
+      "name": "Herdr",
+      "points": [
+        "ANY PANE",
+        "SEND A SELECTION",
+        "SCOUT FEED"
+      ],
+      "crop": [
+        740,
+        21
+      ]
+    }
   },
   {
     "key": "pi",
     "title": "pi",
     "repo": "oscout/pi-scout",
     "caption": "Add Scout tools to a minimal terminal-agent session.",
-    "alt": "Scout connects to a minimal pi prompt with extension slots."
+    "alt": "Scout connects to a minimal pi prompt with extension slots.",
+    "social": {
+      "name": "pi",
+      "points": [
+        "SEND",
+        "ASK",
+        "WHO",
+        "LOCAL BROKER"
+      ],
+      "crop": [
+        340,
+        21
+      ]
+    }
   },
   {
     "key": "hermes",
     "title": "Hermes",
     "repo": "oscout/hermes-scout",
     "caption": "Reach Scout tools from a Hermes conversation.",
-    "alt": "Scout connects to a Hermes conversation with a bridge to tool tiles."
+    "alt": "Scout connects to a Hermes conversation with a bridge to tool tiles.",
+    "social": {
+      "name": "Hermes",
+      "points": [
+        "CHAT TO TOOLS",
+        "SCOUT MCP",
+        "LOCAL AGENTS"
+      ],
+      "crop": [
+        384,
+        21
+      ]
+    }
   },
   {
     "key": "grok",
     "title": "Grok Bot",
     "repo": "oscout/grok-scout",
     "caption": "Reach your local coding agents through the hosted gateway and an online bridge.",
-    "alt": "A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation."
+    "alt": "A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation.",
+    "social": {
+      "name": "Grok Bot",
+      "points": [
+        "HOSTED MCP",
+        "OAUTH",
+        "LOCAL BRIDGE"
+      ],
+      "crop": [
+        1000,
+        21
+      ]
+    }
   },
   {
     "key": "android",
     "title": "Android",
     "repo": "oscout/scout-android",
     "caption": "Your agents in your pocket: approve a permission request without leaving the notification.",
-    "alt": "Scout reaches a paired Android phone through an encrypted relay, where a permission request arrives as a heads-up notification with Deny and Allow."
+    "alt": "Scout reaches a paired Android phone through an encrypted relay, where a permission request arrives as a heads-up notification with Deny and Allow.",
+    "social": {
+      "name": "Android",
+      "points": [
+        "PAIR BY QR",
+        "END-TO-END ENCRYPTED",
+        "ONE-TAP APPROVALS"
+      ],
+      "crop": [
+        1010,
+        21
+      ],
+      "preposition": "on"
+    }
   }
 ]
