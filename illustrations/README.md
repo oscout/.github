@@ -14,6 +14,16 @@ bun run check
 
 `render.mjs` reads the source icons in `marks/` and writes `assets/illustrations/{host}-scout-{dark,light}.svg`, `.png`, and `@2x.png`. SVG and standard PNG canvases are 1600 × 500; double-resolution PNGs are 3200 × 1000. `manifest.json` owns captions, alt text, and destination repositories. [View the gallery](./index.html).
 
+## Social cards
+
+`social.mjs` renders a GitHub social preview for each integration into `assets/social/{host}-scout-social.png` (2560 × 1280, matching `oscout/scout`'s card). The left column has the eyebrow, the Scout mark and wordmark, a tagline, and three points. The right panel is a crop of the host's own dark illustration around its entry, drawn by `render.mjs`. Text, crop origin, and whether the host's mark is seated over the crop live under `social` in `manifest.json`.
+
+```bash
+bun run social:render
+```
+
+Fonts resolve through fontconfig, so JetBrains Mono must be installed. GitHub has no API for social previews: upload each PNG in the repository's **Settings → Social preview**.
+
 ## Use in an integration
 
 Copy the host's light and dark SVGs into the integration repository's `assets/` directory as `scout-illustration-light.svg` and `scout-illustration-dark.svg`. Use a `<picture>` with a `prefers-color-scheme: dark` source and a light fallback, followed by the manifest caption. Copy the provenance note too; Hermes also retains the MIT license. For a GitHub Pages site published from `/docs`, keep its illustration under `docs/assets/` so Pages can serve it.
