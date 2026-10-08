@@ -14,7 +14,6 @@
     "alt": "Scout connects to a Claude Code prompt beneath a transcript with tool calls and results.",
     "social": {
       "name": "Claude Code",
-      "tagline": "Ask other agents from Claude Code.",
       "points": [
         "SLASH COMMANDS",
         "SCOUT CHANNEL",
@@ -34,7 +33,6 @@
     "alt": "Scout connects to a Codex work thread with a review task and code diff.",
     "social": {
       "name": "Codex",
-      "tagline": "Hand off a review, keep the thread.",
       "points": [
         "MCP TOOLS",
         "REVIEW HANDOFFS",
@@ -54,7 +52,6 @@
     "alt": "Scout connects to an editor agent pane carrying a selected range of code as context.",
     "social": {
       "name": "Cursor",
-      "tagline": "Scout coordination in your editor.",
       "points": [
         "MCP CONFIG",
         "ONE INSTALLER",
@@ -74,7 +71,6 @@
     "alt": "Scout connects to an active terminal pane within a tiled Herdr workspace.",
     "social": {
       "name": "Herdr",
-      "tagline": "Ask agents from any terminal pane.",
       "points": [
         "ANY PANE",
         "SEND A SELECTION",
@@ -94,7 +90,6 @@
     "alt": "Scout connects to a minimal pi prompt with extension slots.",
     "social": {
       "name": "pi",
-      "tagline": "Scout tools for a minimal agent.",
       "points": [
         "SEND",
         "ASK",
@@ -115,7 +110,6 @@
     "alt": "Scout connects to a Hermes conversation with a bridge to tool tiles.",
     "social": {
       "name": "Hermes",
-      "tagline": "Reach Scout tools from a chat.",
       "points": [
         "CHAT TO TOOLS",
         "SCOUT MCP",
@@ -135,7 +129,6 @@
     "alt": "A local Scout bridge reaches a hosted gateway boundary beside a Grok Bot conversation.",
     "social": {
       "name": "Grok Bot",
-      "tagline": "Your local agents, from Grok Bot.",
       "points": [
         "HOSTED MCP",
         "OAUTH",
@@ -155,7 +148,6 @@
     "alt": "Scout reaches a paired Android phone through an encrypted relay, where a permission request arrives as a heads-up notification with Deny and Allow.",
     "social": {
       "name": "Android",
-      "tagline": "Your agents, in your pocket.",
       "points": [
         "PAIR BY QR",
         "END-TO-END ENCRYPTED",
@@ -164,7 +156,8 @@
       "crop": [
         1010,
         21
-      ]
+      ],
+      "preposition": "on"
     }
   }
 ]

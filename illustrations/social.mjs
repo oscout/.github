@@ -1,7 +1,7 @@
 // Repository social preview cards (GitHub "Social preview"), one per integration.
 // 2560 × 1280 PNG drawn on a 1280 × 640 grid in oscout/scout's card style: an eyebrow, then the
-// co-brand lockup (Scout mark × host mark, same size, no wordmark), a tagline and three points on
-// the left; on the right, a crop of the host's own dark illustration around its entry.
+// co-brand lockup (Scout mark × host mark, same size, no wordmark), the shared tagline ("Organized
+// collaboration between all your agents, in <host>.") and three points on the left; on the right, a crop of the host's own dark illustration around its entry.
 // Text and crops live in manifest.json under "social".
 // Needs JetBrains Mono installed (librsvg resolves fonts through fontconfig).
 // Run from the repository root: bun run social:render
@@ -22,6 +22,9 @@ const FONT = "JetBrains Mono";
 // The art panel and the crop share one aspect so the host drawing is never stretched.
 const PANEL = { x: 752, y: 70, w: 474, h: 560 };
 const CROP_W = 388, CROP_H = 458;
+
+// One promise for every integration; only the platform changes.
+const TAGLINE = ["Organized collaboration between", "all your agents,"];
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
@@ -64,8 +67,8 @@ ${grid.join("")}
 </g>
 <path d="M${xc - xr} ${yc - xr} L${xc + xr} ${yc + xr} M${xc + xr} ${yc - xr} L${xc - xr} ${yc + xr}" stroke="${SAGE}" stroke-width="5" stroke-linecap="round"/>
 ${hostMark(key, hostX, TOP, MARK)}
-<text x="82" y="446" font-family="${FONT}" font-weight="700" font-size="30" fill="${INK}" fill-opacity="0.94">${esc(social.tagline)}</text>
-<text x="83" y="516" font-family="${FONT}" font-weight="700" font-size="17" letter-spacing="2.4" fill="${SAGE}">${esc(social.points.join(" · "))}</text>
+<text font-family="${FONT}" font-weight="700" font-size="30" fill="${INK}" fill-opacity="0.94"><tspan x="82" y="430">${esc(TAGLINE[0])}</tspan><tspan x="82" y="472">${esc(`${TAGLINE[1]} ${social.preposition ?? "in"} ${social.name}.`)}</tspan></text>
+<text x="83" y="536" font-family="${FONT}" font-weight="700" font-size="17" letter-spacing="2.4" fill="${SAGE}">${esc(social.points.join(" · "))}</text>
 <svg x="${PANEL.x}" y="${PANEL.y}" width="${PANEL.w}" height="${PANEL.h}" viewBox="${cx} ${cy} ${CROP_W} ${CROP_H}" overflow="hidden">${inner}</svg>
 </svg>`;
 }
