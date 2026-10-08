@@ -16,7 +16,7 @@ bun run check
 
 ## Social cards
 
-`social.mjs` renders a GitHub social preview for each integration into `assets/social/{host}-scout-social.png` (2560 × 1280, matching `oscout/scout`'s card). The left column has the eyebrow, the Scout mark and wordmark, a tagline, and three points. The right panel is a crop of the host's own dark illustration around its entry, drawn by `render.mjs`. Text, crop origin, and whether the host's mark is seated over the crop live under `social` in `manifest.json`.
+`social.mjs` renders a GitHub social preview for each integration into `assets/social/{host}-scout-social.png` (2560 × 1280, matching `oscout/scout`'s card). The left column has the eyebrow, the co-brand lockup (Scout mark × host mark at one size, no wordmark), a tagline, and three points. The right panel is a crop of the host's own dark illustration around its entry, drawn by `render.mjs`. Text, crop origin, and whether the host's mark is seated over the crop live under `social` in `manifest.json`.
 
 ```bash
 bun run social:render
